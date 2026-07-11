@@ -3,14 +3,9 @@
    ========================================================================== */
 
 // ==========================================================================
-// APK Download Configuration (Google Drive Direct Link)
+// APK Download Configuration (GitHub Release Link)
 // ==========================================================================
-// To configure your Google Drive download:
-// 1. Upload your APK to Google Drive.
-// 2. Share the file and change access to "Anyone with the link" (set as Viewer).
-// 3. Copy the link: https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing
-// 4. Extract YOUR_FILE_ID and paste it below.
-const APK_DOWNLOAD_URL = "https://drive.google.com/uc?export=download&confirm=t&id=1av1gn0_FMv2nODx-km7cPDbxcUwQZu6M";
+const APK_DOWNLOAD_URL = "https://github.com/sankalpapesitm/website/releases/download/v1.0/app-release.apk";
 
 document.addEventListener('DOMContentLoaded', () => {
     // Update all APK download buttons dynamically on page load
