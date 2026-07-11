@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudShieldUPI - Guard Your Digital Payments</title>
+    <meta name="description"
+        content="Protect your UPI transactions with FraudShieldUPI. AI-powered real-time fraud detection, malicious QR code analysis, scam alert notifications, and safe UPI checking.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/logo.png" alt="FraudShieldUPI Logo" class="brand-logo-img">
+                <span>FraudShield<span class="text-gradient-hero">UPI</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#simulator">Live Scanner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn-premium apk-download-btn" href="#">
+                            <i class="bi bi-download"></i> Download APK
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-start mb-5 mb-lg-0">
+                    <div class="hero-subtitle">
+                        <i class="bi bi-shield-fill-check"></i> Next-Gen Payment Protection
+                    </div>
+                    <h1 class="hero-title">
+                        Shield Your UPI Payments <br>
+                        <span class="text-gradient-mixed">From Cyber Scammers</span>
+                    </h1>
+                    <p class="hero-description">
+                        FraudShieldUPI runs silently on your phone, analyzing UPI links, SMS payment requests, and QR
+                        codes using advanced on-device AI. Prevent accidental money transfers to fraudsters instantly.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#" class="btn-premium apk-download-btn">
+                            <i class="bi bi-android2"></i> Download Free APK
+                        </a>
+                        <a href="#simulator" class="btn-outline-premium">
+                            <i class="bi bi-play-circle"></i> Try Live Scanner
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper mx-auto" style="max-width: 400px;">
+                        <div class="scan-line"></div>
+                        <div class="hero-image-container">
+                            <img src="assets/app_mockup.png" alt="FraudShieldUPI Mobile App Interface"
+                                class="hero-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Stats Banner -->
+    <section class="py-5 bg-black-50">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="glass-panel stat-card">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Scams Blocked</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="glass-panel stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">AI Accuracy</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="glass-panel stat-card">
+                        <div class="stat-number">0ms</div>
+                        <div class="stat-label">Local Latency</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="glass-panel stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">On-Device Privacy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-gradient-hero display-5">Empowered Security Features</h2>
+                <p class="text-secondary max-width-md mx-auto">Equipped with real-time defensive checks, keeping your
+                    digital wallets secure from all common vectors of UPI fraud.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1: AI SMS Scan -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-chat-left-quote-fill fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">AI SMS Scanning</h3>
+                        <p class="feature-desc">Automatically reads and flags incoming scam texts requesting panic UPI
+                            transfers, false cashback wins, or suspicious collect requests.</p>
+                    </div>
+                </div>
+                <!-- Card 2: QR Scanner -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-qr-code-scan fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">Secure QR Check</h3>
+                        <p class="feature-desc">Scan any merchant QR code inside the app. FraudShieldUPI checks merchant
+                            history, domain redirect records, and blacklist databases before loading payment screens.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3: UPI ID Verifier -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-shield-check fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">UPI ID Trust Verification</h3>
+                        <p class="feature-desc">Verify UPI handles and VPA (Virtual Payment Addresses) against
+                            NPCI-registered fraud registers and crowdsourced feedback lists.</p>
+                    </div>
+                </div>
+                <!-- Card 4: Scam Alerts -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-bell-fill fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">Live Scam Alerts</h3>
+                        <p class="feature-desc">Receive regional threat advisories about active fraud rings, counterfeit
+                            merchant names, and phishing trends targeting UPI users near you.</p>
+                    </div>
+                </div>
+                <!-- Card 5: Safe Redirects -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-arrow-up-right-circle-fill fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">Deep Link Inspection</h3>
+                        <p class="feature-desc">Intercept and scan UPI payment URI schemes (e.g. upi://pay...) from
+                            emails or browser redirect redirects to verify safety.</p>
+                    </div>
+                </div>
+                <!-- Card 6: Zero Logs Privacy -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel glass-panel-hover feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-eye-slash-fill fs-3"></i>
+                        </div>
+                        <h3 class="feature-title">Zero Logs Privacy</h3>
+                        <p class="feature-desc">No registration required. All message scanning and address checking are
+                            processed locally on your phone. We never store or transmit your sensitive banking details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPI Scam Simulator Section -->
+    <section id="simulator" class="simulator-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 text-gradient-accent mb-4">Try Our UPI Scam Detector</h2>
+                    <p class="text-secondary mb-4">
+                        Test the power of our local detection engine. Paste a suspicious SMS message, warning notice, or
+                        a suspicious UPI ID below to see how FraudShieldUPI inspects and flags threat categories.
+                    </p>
+                    <p class="text-muted small">
+                        *This simulator demonstrates our on-device algorithm logic executing checks locally inside your
+                        browser interface.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="glass-panel simulator-box">
+                        <h3 class="h5 mb-4 text-gradient-hero"><i class="bi bi-terminal-fill"></i> Interactive Scam
+                            Scanner</h3>
+
+                        <div class="simulator-input-group mb-3">
+                            <i class="bi bi-search text-muted"></i>
+                            <input type="text" id="scannerInput" class="simulator-input"
+                                placeholder="Paste SMS content or suspect UPI ID (e.g., prize@okaxis)...">
+                            <button id="scanBtn" class="simulator-btn">Scan Now</button>
+                        </div>
+
+                        <div class="simulator-quick-tags">
+                            <span class="simulator-tag"
+                                onclick="useSample('Your electricity bill is overdue. Call 8927XXXXXX to avoid disconnect. Click link: bit.ly/pay-bill-3')">Electricity
+                                Bill Link</span>
+                            <span class="simulator-tag"
+                                onclick="useSample('Congrats! You won a scratch card of ₹5,000. Collect prize money at: reward-pay@upi')">Cashback
+                                / Lottery VPA</span>
+                            <span class="simulator-tag" onclick="useSample('rahul@okaxis')">Safe Personal UPI ID</span>
+                        </div>
+
+                        <div class="mt-4">
+                            <div id="simulatorResult" class="simulator-result-box">
+                                <div class="simulator-result-icon">
+                                    <i class="bi bi-shield-slash text-muted"></i>
+                                </div>
+                                <h4 class="simulator-result-title text-muted">Awaiting Scanner Input</h4>
+                                <p class="simulator-result-desc">Type/click a sample message above and hit 'Scan Now' to
+                                    test the detection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section / Project Overview -->
+    <section id="about" class="py-5 bg-black-50">
+        <div class="container">
+            <!-- Project Description Header -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 text-gradient-mixed mb-4">Project Overview: FraudShield UPI</h2>
+                    <p class="lead text-secondary">
+                        FraudShield UPI is a next-generation, AI-powered secure payment assistant app designed to
+                        protect users from UPI-based payment fraud, phishing, and scanner-based scams.
+                    </p>
+                    <p class="text-muted small">
+                        It combines a premium <strong>React Native</strong> mobile frontend for smooth, native user
+                        experiences with a robust <strong>Python/Flask</strong> machine learning backend running
+                        real-time risk classification.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Features Deck -->
+            <div class="row g-4 justify-content-center">
+                <!-- Feature 1: Real-Time Threat Analysis -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel p-4 h-100">
+                        <div class="text-gradient-hero mb-3 fs-4"><i class="bi bi-cpu-fill"></i> Real-Time Threat
+                            Analysis</div>
+                        <p class="text-secondary small mb-0">
+                            When you scan a UPI QR code or transfer money, the app runs predictive AI checks in the
+                            background (using Random Forest and XGBoost machine learning models) to assess transaction
+                            risk.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 2: Risk Categorization -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel p-4 h-100">
+                        <div class="text-gradient-accent mb-3 fs-4"><i class="bi bi-ui-checks"></i> Risk Categorization
+                        </div>
+                        <p class="text-secondary small mb-0">
+                            Instant safety ratings (<strong>SAFE</strong>, <strong>RISKY</strong>, or
+                            <strong>DANGEROUS</strong>) are displayed before you authorize any transfer, warning you of
+                            known fraudulent UPI IDs, malicious links, or anomalous location profiles.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 3: Biometric & Device Security -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-panel p-4 h-100">
+                        <div class="text-gradient-mixed mb-3 fs-4"><i class="bi bi-fingerprint"></i> Biometric & Device
+                            Security</div>
+                        <p class="text-secondary small mb-0">
+                            Includes multi-factor authentication, biometric logins (fingerprint/PIN), and local GPS
+                            location monitoring to prevent unauthorized access and detect location anomalies.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 4: Personalized QR & Profiles -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="glass-panel p-4 h-100">
+                        <div class="text-gradient-hero mb-3 fs-4"><i class="bi bi-qr-code"></i> Personalized QR &
+                            Profiles</div>
+                        <p class="text-secondary small mb-0">
+                            Enables secure money receipts via custom QR code generation, along with wallet balance
+                            monitoring and user trust score auditing to maintain standard payment safety metrics.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 5: Community Fraud Reporting -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="glass-panel p-4 h-100">
+                        <div class="text-gradient-accent mb-3 fs-4"><i class="bi bi-people-fill"></i> Community Fraud
+                            Reporting</div>
+                        <p class="text-secondary small mb-0">
+                            Users can directly file reports against fraudulent UPI addresses, instantly feeding threat
+                            data back into the machine learning models to protect the entire ecosystem dynamically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-gradient-accent display-5">What Users Say</h2>
+                <p class="text-secondary max-width-md mx-auto">Read how FraudShieldUPI has saved thousands of rupees for
+                    everyday digital payment users.</p>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="glass-panel testimonial-card text-center">
+                                    <p class="testimonial-quote">"I received a message claiming my electricity would be
+                                        disconnected and containing a link. FraudShieldUPI immediately flagged it as
+                                        malware. It saved me from losing 25,000 rupees."</p>
+                                    <div class="testimonial-user justify-content-center">
+                                        <div class="testimonial-avatar">A</div>
+                                        <div class="text-start">
+                                            <div class="testimonial-name">Amit Kumar</div>
+                                            <div class="testimonial-role">Shop Owner, Delhi</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="glass-panel testimonial-card text-center">
+                                    <p class="testimonial-quote">"Super simple interface. I scan every unknown QR code
+                                        with it first before opening PhonePe or GPay. Safe and extremely fast!"</p>
+                                    <div class="testimonial-user justify-content-center">
+                                        <div class="testimonial-avatar">P</div>
+                                        <div class="text-start">
+                                            <div class="testimonial-name">Pooja Sharma</div>
+                                            <div class="testimonial-role">Student, Bengaluru</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="glass-panel p-5 text-center position-relative overflow-hidden">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7 text-start">
+                        <h2 class="display-5 text-gradient-hero mb-3">Install FraudShieldUPI Today</h2>
+                        <p class="text-secondary mb-4">
+                            Take charge of your UPI safety. Download the direct installation file or find us on official
+                            channels. Build your payment security layer in under 2 minutes.
+                        </p>
+                        <div class="download-badge-group">
+                            <a href="#" class="btn-premium apk-download-btn py-3 px-4 fs-5"
+                                id="downloadApkLink">
+                                <i class="bi bi-android2"></i> Download APK Installer
+                            </a>
+                            <a href="#" class="btn-outline-premium py-3 px-4 fs-5 disabled opacity-75">
+                                <i class="bi bi-google-play"></i> Google Play <small>(Coming Soon)</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center text-lg-end">
+                        <div class="d-inline-block text-center">
+                            <div class="qr-code-wrapper mb-3 mx-auto">
+                                <img id="qrCodeImg" src="" alt="Download QR Code" class="qr-code-image img-fluid">
+                            </div>
+                            <div class="text-gradient-hero small font-heading fw-bold">Scan to Download on Phone</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="glass-panel p-5">
+                        <h2 class="text-center text-gradient-mixed mb-4">Contact Support</h2>
+                        <p class="text-secondary text-center mb-4">Have questions about installation, permissions, or
+                            security reporting? Send us a message.</p>
+
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event)">
+                            <!-- Get your free key at https://web3forms.com/ -->
+                            <input type="hidden" name="access_key" value="b30ab2eb-5711-48bd-b8c2-59097bcf1617">
+                            <input type="hidden" name="redirect" value="index.html">
+                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+                            <div class="form-group-custom">
+                                <label for="contactName" class="form-label-custom">Full Name</label>
+                                <input type="text" id="contactName" name="name" class="form-control form-control-custom"
+                                    placeholder="e.g. Rahul Sharma" required>
+                            </div>
+
+                            <div class="form-group-custom">
+                                <label for="contactEmail" class="form-label-custom">Email Address</label>
+                                <input type="email" id="contactEmail" name="email" class="form-control form-control-custom"
+                                    placeholder="e.g. rahul@example.com" required>
+                            </div>
+
+                            <div class="form-group-custom">
+                                <label for="contactPhone" class="form-label-custom">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone" class="form-control form-control-custom"
+                                    placeholder="e.g. 9876543210" pattern="[0-9]{10}" maxlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                                    title="Please enter a valid 10-digit phone number">
+                            </div>
+
+                            <div class="form-group-custom">
+                                <label for="contactMessage" class="form-label-custom">Message</label>
+                                <textarea id="contactMessage" name="message" class="form-control form-control-custom" rows="4"
+                                    placeholder="How can we help you?" required></textarea>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn-premium w-100 py-3 mt-3">
+                                <i class="bi bi-send-fill"></i> Send Message
+                            </button>
+                        </form>
+
+                        <div id="formFeedback" class="mt-4 p-3 rounded text-center d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <a class="footer-logo" href="#home">
+                        <img src="assets/logo.png" alt="FraudShieldUPI Logo" class="brand-logo-img me-2">
+                        <span>FraudShield<span class="text-gradient-hero">UPI</span></span>
+                    </a>
+                    <p class="footer-description">
+                        A secure, client-side safety tool aimed at reducing UPI payment intercepts and social
+                        engineering financial crimes in digital environments. Built with a focus on absolute privacy.
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 ms-lg-auto">
+                    <h4 class="footer-title">Navigation</h4>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#simulator" class="footer-link">Live Scanner</a>
+                    <a href="#about" class="footer-link">About Us</a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4 class="footer-title">Legal Docs</h4>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer-link">Terms & Conditions</a>
+                    <a href="#contact" class="footer-link">Support Desk</a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-bottom-text">
+                        &copy; 2026 FraudShieldUPI Project. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <p class="footer-bottom-text">
+                        UPI is a trademark of National Payments Corporation of India (NPCI).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
